@@ -1,0 +1,22 @@
+body {
+font-family: 'Caveat', cursive;
+  font-size:25px;
+
+
+  
+}
+
+
+
+header {
+  text-align: center;
+}
+
+section{
+  position:relative; left: 30px;
+}
+
+h1 {
+text-align: center;
+  
+}
