@@ -1,16 +1,17 @@
 body {
 font-family: 'Caveat', cursive;
   font-size:25px;
-
-
-  
 }
 
-
-
-header {
+h1 {
   text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+
 
 section{
   position:relative; left: 30px;
@@ -20,3 +21,8 @@ h1 {
 text-align: center;
   
 }
+
+html{
+  background-color: #89CFF0;
+}]
+
