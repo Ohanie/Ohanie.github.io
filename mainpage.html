@@ -6,16 +6,18 @@
   <title>replit</title>
   <link href="Styling.css" rel="stylesheet" type="text/css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+   <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Deep Sea Peppers</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="mainpage.html">Deep Sea Peppers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -25,7 +27,11 @@
             <a class="nav-link active" aria-current="page" href="tableofcontents.html">Table of contents</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Timeline</a>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="3Ddesign.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About me</a>
           </li>
         </ul>
         <form role="search">
@@ -34,21 +40,19 @@
       </div>
     </div>
   </nav>
+  <div class="pagelayout">
+    <div class="expcontainer">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="maincontent">
+      
 
-  
-
-
-<div class="maincontent">
-    <header>
-      <h1>
-        DeepSea Pepper
-      </h1>
-  
       <p> April- June 2023</p>
       <p> Author: Ohanie Cruz</p>
 
     </header>
-
     <summary>
       <h1>
         My Purpose
@@ -69,65 +73,46 @@
       <p style="text-indent:25px;">The problem is global conflicts potentially effecting our food in our daily lives.
         Food could become expensive and harder to come across.</p>
       <!-- project timeline--project budget--your needs assessment--farm planning
-    INCLUDE IN TEXT ABOVE -->
-
-      <p style="text-indent:25px;">What factors should be considered in developing a recommendation? </p>
-      <!-- What recommendations are you making? 
-How will you support your recommendations in your report? -->
-
-      <h2>Project Analysis</h2>
-
-      <p style="text-indent:25px;"> Some strengths of the location of my hydroponic system is that it is in a low foot
-        traffic area and has easy access to work in. A weakness would be the radiator that is next to my system but
-        since it is summer the radiator will not be on. Another weakness is no natural sunlight, my hydroponic system is
-        near a window but has indirect sunlight. I wouldve liked to have a mix of natural sunlight and articifial light.
-      </p>
-      <!-- What are the contributing factors to the problem being faced?
-Identify strengths and weaknesses of location.
-Show us the steps you’ve used to reach your recommendation and implementation.
-Required: Your 2D and 3D Farm Design
-Required: Your Materials List, What concepts have you learned from Change Food For Good’s Intro to AgTech course apply to your case? 
- -->
-    </main>
-
-    <article>
-      <h1>Challenges I Faced</h1>
-      <p style="text-indent:25px;">Early challenges i faced was beginning to learn the basics on Agriculture and
-        Programming. I had no prior
-        experience in either fields so learning both a the same time proved to be a challenge.
-
-        I takled these challenges by taking it one step at a teim and reviewing the modules. Practicing outside of the
-        classroom aswell.
-      </p>
-    </article>
-
-    <footer>
+    INCLUDE IN TEXT ABOVE -->e
       <h2>Results from Case Study</h2>
       <p> "enter results here"</p>
       <h1> Conclusion</h1>
       <p>
         conclusion....
       </p>
+
+      <h2>Tools</h2>
+       <form id="plant-detection-form" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="PD-image-upload">Upload Images:</label>
+          <div class="file-upload">
+            <label class="file-upload-label" for="PD-image-upload">Select Files</label>
+            <input type="file" id="PD-image-upload" name="images[]" multiple accept="image/*">
+          </div>
+          <div class="PD-selected-files"></div>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="submit-button" value="Submit">
+        </div>
+      </form>
+      <div id="api-results">
+        <div class="loading-screen loading-hidden">
+          <h2>LOADING</h2>
+          <div id="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
+    </main>
+  </div>
+  </div>
+  </div>
+   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
     </main>
-
-
-
-</div>
-  </div>
-</div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

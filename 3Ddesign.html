@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <link href="Styling.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .pagelayout { 
+      display: flex;
+      justify-content: row;
+      
+    }
+    img {
+      width: 100%;
+      padding: 50px;
+    }
+    .expcontainer {
+      background-color: rgb(58, 64, 69);
+      height: 100vh;
+      width: 398px !important;
+      color: white;
+      font-size:22px;
+    }
+    .twoDcontext {
+      position: absolute;
+      top: 20%;
+      width: 398px
+    }
+    .designimages1 {
+      position: absolute;
+      left: 40%;
+      top: 10%;
+    }
+@media only screen and (max-width: 960px) {
+ img { width: 60% !important;
+     }
+
+.designimages1 {
+      width: 60% !important;
+    }
+  
+}
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example" style="@media screen (max-width: 960px) {width: 100% !important}">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="mainpage.html">Deep Sea Peppers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+        aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="tableofcontents.html">Table of contents</a>
+          </li>
+          <li class="nav-item">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="3Ddesign.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About me</a>
+          </li>
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="pagelayout">
+    <div class="expcontainer">
+      <p class="twoDcontext"">Given the space I have to work with I came up with an optimal and efficient farm design for the space. The 2D design represents dimensions and spacing between devices in the system. 
+      </p>
+    </div>
+    <div class="designimages1">
+      <figure>
+        <a>
+        <img src="2D.png" >
+          </a>
+      </figure>
+    </div>
+  </div>
+
+</body>
+</html>
