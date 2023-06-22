@@ -1,21 +1,22 @@
 html, body {
   height: 100%;
-  background-color:#656565 !important;
+  background-color:#DBD6D1 !important;
   background-size: cover;
+  
 }
 
 .maincontent {
-  color:#FFFFFF;
+  color:#322925;
   margin-top: 5%;
   margin-left: 10%;
-  margin-right:10%
+  margin-right:10%;
+  
 }
-
 
 .background-container {
   background-image: url("agriculture-1846044_1920.jpg");
   background-size: cover;
-  filter: brightness(50%);
+  filter: blur(50px);
   min-height: 100%;
 }
  .title {
@@ -25,7 +26,7 @@ font-family: Arial, sans-serif;
     font-weight: 600;
     font-size: 40px;
     line-height: 51px;
-    color: #FFFFFF;
+    color: #322925;
     position: absolute;
     top: 10%;
     left: 8%;
@@ -41,11 +42,47 @@ position: absolute;
     font-weight: 600;
     font-size: 40px;
     line-height: 51px;
-    color: #FFFFFF;
+    color: #FFFF;
+}
+.nametag {
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.health-tool{
+  position: absolute;
+ right:50%;
+top:10%;
+}
+
+
+
+
+
+
+
+  
 }
 
 .navbar {
-  top: 5%;
+  top: 0%;
+ 
+}
+
+.bg-custom {
+  background-color: #322925; /* Change this to your desired color */
+}
+
+.navbar a {
+  color: #DBD6D1; /* Change this to the desired link color */
+}
+
+
+
+
+
+.lefttot {
+
   
 }
 
@@ -54,17 +91,8 @@ position: absolute;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) 
   .title,
   .direct,
-  .nametag {
-    font-size: 30px;
-    line-height: 38px;
-  }
   
-
-
-
   
-
-

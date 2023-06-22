@@ -9,13 +9,29 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+  <style>
+    .box1 {
+      margin: 10px;
+      border: 20px;
+      max-width: 400px;
+    }
+
+    .box2 {
+      margin: 20px;
+      border: 20px;
+      padding: 50px;
+      max-width: 400px;
+      position: absolute;
+      right: -6px;
+  </style>
+
 
 </head>
 
 <body>
-   <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" aria-label="Second navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="mainpage.html">Deep Sea Peppers</a>
+      <a class="navbar-brand" style="color:#DBD6D1;" href="mainpage.html">Deep Sea Peppers</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
         aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,14 +40,23 @@
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="tableofcontents.html">Table of contents</a>
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="tableofcontents.html">Table of
+              contents</a>
           </li>
           <li class="nav-item">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="3Ddesign.html">Design</a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="3Ddesign.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">About me</a>
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="Hydroponic.html">My Hydroponic
+              System</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="health.html">Health
+              Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="about.html">About me</a>
           </li>
         </ul>
         <form role="search">
@@ -42,15 +67,15 @@
   </nav>
   <div class="pagelayout">
     <div class="expcontainer">
-        </form>
-      </div>
+      </form>
     </div>
+  </div>
   </nav>
   <div class="maincontent">
-      
 
-      <p> April- June 2023</p>
-      <p> Author: Ohanie Cruz</p>
+
+    <p class="date"> April- June 2023</p>
+    <p class="author"> Author: Ohanie Cruz</p>
 
     </header>
     <summary>
@@ -58,7 +83,8 @@
         My Purpose
       </h1>
 
-      <p style="text-indent:25px;">My purpose on my journey to grow bell peppers was to learn something new and apply it
+      <p class="box1" style="text-indent:25px;">My purpose on my journey to grow bell peppers was to learn something new
+        and apply it
         to my other skills. Im takeling the productions side of the food system because with so may threats in the world
         knowing how to create a simple system to feed yourself and others to survive is a skill that could determine if
         you live or die. </p>
@@ -66,53 +92,12 @@
       takeling with my project?"-->
     </summary>
     <main>
-      <h1>Project Overview</h1>
-      <p style="text-indent:25px;">My family has always had plants and flowers around the house and having the
+      <h1></h1>
+      <p class="box2" style="text-indent:25px;">My family has always had plants and flowers around the house and having
+        the
         opportunity to assist and teach them about taking care of plants. </p>
 
-      <p style="text-indent:25px;">The problem is global conflicts potentially effecting our food in our daily lives.
-        Food could become expensive and harder to come across.</p>
-      <!-- project timeline--project budget--your needs assessment--farm planning
-    INCLUDE IN TEXT ABOVE -->e
-      <h2>Results from Case Study</h2>
-      <p> "enter results here"</p>
-      <h1> Conclusion</h1>
-      <p>
-        conclusion....
-      </p>
-
-      <h2>Tools</h2>
-       <form id="plant-detection-form" enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="PD-image-upload">Upload Images:</label>
-          <div class="file-upload">
-            <label class="file-upload-label" for="PD-image-upload">Select Files</label>
-            <input type="file" id="PD-image-upload" name="images[]" multiple accept="image/*">
-          </div>
-          <div class="PD-selected-files"></div>
-        </div>
-        <div class="form-group">
-          <input type="submit" class="submit-button" value="Submit">
-        </div>
-      </form>
-      <div id="api-results">
-        <div class="loading-screen loading-hidden">
-          <h2>LOADING</h2>
-          <div id="loading-spinner"></div>
-        </div>
-      </div>
-    </div>
-    </footer>
-    </main>
-  </div>
-  </div>
-  </div>
-   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-
-    </main>
+  </main>
 </body>
 
 </html>

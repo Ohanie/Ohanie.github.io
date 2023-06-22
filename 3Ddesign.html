@@ -11,48 +11,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    .pagelayout { 
+    .pagelayout {
       display: flex;
       justify-content: row;
-      
     }
+
     img {
-      width: 100%;
-      padding: 50px;
+      width: 70%;
+      height: 65%;
+      padding: 150px;
+      margin: 20px;
     }
+
     .expcontainer {
-      background-color: rgb(58, 64, 69);
+      background-color: #907f6b;
       height: 100vh;
       width: 398px !important;
       color: white;
-      font-size:22px;
+      font-size: 22px;
     }
+
     .twoDcontext {
       position: absolute;
       top: 20%;
-      width: 398px
+      max-width: 385px;
+      color: #faf4ed;
+      border-right: 398px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
+
+    .threeDcontext {
+      position: absolute;
+      top: 70%;
+      width: 385px;
+      color: #faf4ed;
+      border-right: 398px;
+      margin-left: 10px;
+
+    }
+
     .designimages1 {
       position: absolute;
-      left: 40%;
-      top: 10%;
+      left: 30%;
+      top: 0%;
     }
-@media only screen and (max-width: 960px) {
- img { width: 60% !important;
-     }
 
-.designimages1 {
-      width: 60% !important;
+    .designimages2 {
+      position: absolute;
+      left: 30%;
+      top: 35%;
     }
-  
-}
+
+    @media only screen and (max-width: 600px) {
+      img {
+        position: absolute;
+        left: 10%;
+        height: 100%;
+        padding: 23px !important;
+        margin: 0px !important;
+      }
+    }
+
+    }
+
+    }
   </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example" style="@media screen (max-width: 960px) {width: 100% !important}">
+  <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" aria-label="Second navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand" href="mainpage.html">Deep Sea Peppers</a>
+      <a class="navbar-brand" style="color:#DBD6D1;" href="mainpage.html">Deep Sea Peppers</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
         aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,14 +91,23 @@
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="tableofcontents.html">Table of contents</a>
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="tableofcontents.html">Table of
+              contents</a>
           </li>
           <li class="nav-item">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="3Ddesign.html">Design</a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="3Ddesign.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">About me</a>
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="Hydroponic.html">My Hydroponic
+              System</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="health.html">Health
+              Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="about.html">About me</a>
           </li>
         </ul>
         <form role="search">
@@ -79,17 +118,40 @@
   </nav>
   <div class="pagelayout">
     <div class="expcontainer">
-      <p class="twoDcontext"">Given the space I have to work with I came up with an optimal and efficient farm design for the space. The 2D design represents dimensions and spacing between devices in the system. 
+      </form>
+    </div>
+  </div>
+  </nav>
+  <div class="pagelayout">
+    <div class="expcontainer">
+      <p class="twoDcontext" style="color:#DBD6D1">
+        I measured the space I was going to use and scaled it down.Taking the measurements of items I am using, like the
+        bucket and storage. Creating this 2D design allowed me make sure how I will be using the space and optimize my
+        space for maximum efficiently.
+      </p>
+      <p class="threeDcontext" style="color:#DBD6D1">I created a 3D visualization of the final farm design to give
+        perspective and a outlook at what a final product could look like.
       </p>
     </div>
-    <div class="designimages1">
-      <figure>
-        <a>
-        <img src="2D.png" >
+    <div class="imagesContainer">
+
+      <div class="designimages1">
+        <figure>
+          <a>
+            <img src="2D.png" height="100" width="100">
           </a>
-      </figure>
+        </figure>
+      </div>
+      <div class="designimages2">
+        <figure>
+          <a>
+            <img src="1design.png">
+          </a>
+        </figure>
+      </div>
     </div>
   </div>
 
 </body>
+
 </html>
