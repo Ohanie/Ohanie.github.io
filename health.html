@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand navbar-dark bg-custom sticky-top" aria-label="Second navbar example">
     <div class="container-fluid">
       <a class="navbar-brand" style="color:#DBD6D1;" href="mainpage.html">Deep Sea Peppers</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
@@ -45,8 +45,7 @@
             <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="about.html">About me</a>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
         </form>
       </div>
     </div>
@@ -58,8 +57,23 @@
   </div>
   </nav>
   </nav>
-<div  class="health-tool">
-  <h2>Tools</h2>
+  <div class="flexbox-tool-container">
+    <div class="flexbox-tool-header">
+      <h1>
+        Health Assessment Tool
+      </h1>
+    </div>
+    <div class="flexbox-health-item1">
+      <p style="text-indent: 25px;">
+      This Health Assessment Tool does exactly what is says, it will assess the health of a plant you give it by submitting it to the Health Assessment API. It can provide you with possible reasons why your plant could be unhealthy. One thing I like about this health assessment tool is that it also includes a probability in its answer. This allows me to see how confident the API is with its answer. If the probability isn't to your liking, you can use your own judgment and disregard or regard its answer.
+      </p>
+    </div>
+
+
+
+
+    <div class="health-tool">
+      <h2>Tools</h2>
       <form id="plant-health-assessment-form" enctype="multipart/form-data">
         <div class="form-group">
           <label for="PHA-image-upload">Upload Images:</label>
@@ -79,14 +93,14 @@
           <div class="loading-spinner"></div>
         </div>
       </div>
-  </div>
+    </div>
   </div>
   </footer>
   </main>
   </div>
   </div>
   </div>
-</div>
+  </div>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

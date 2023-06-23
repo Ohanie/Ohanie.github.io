@@ -17,10 +17,10 @@
     }
 
     img {
-      width: 70%;
+      /* width: 70%;
       height: 65%;
       padding: 150px;
-      margin: 20px;
+      margin: 20px; */
     }
 
     .expcontainer {
@@ -65,22 +65,49 @@
 
     @media only screen and (max-width: 600px) {
       img {
-        position: absolute;
+        /* position: absolute;
         left: 10%;
         height: 100%;
         padding: 23px !important;
-        margin: 0px !important;
+        margin: 0px !important; */
       }
     }
 
+    .dimensional-mockups {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: calc(100% - 80px);
     }
 
+    .dimensional-mockups .description {
+      background-color: #907f6b;
+      font-size: 22px;
+      width: 30%;
+      height: 100%;
+      color: #DBD6D1;
+      padding: 3rem 1rem;
+    }
+
+    .two-dimensional-mockup,
+    .three-dimensional-mockup {
+      display: flex;
+      margin: 0;
+      height: 50%;
+    }
+
+    .dimensional-mockups img {
+      width: 45%;
+      height: fit-content;
+      align-self: center;
+      padding: 10px;
+      
     }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand navbar-dark bg-custom fixed-top" aria-label="Second navbar example">
+  <nav class="navbar navbar-expand navbar-dark bg-custom sticky-top" aria-label="Second navbar example">
     <div class="container-fluid">
       <a class="navbar-brand" style="color:#DBD6D1;" href="mainpage.html">Deep Sea Peppers</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
@@ -110,19 +137,15 @@
             <a class="nav-link active" aria-current="page" style="color:#DBD6D1" ; href="about.html">About me</a>
           </li>
         </ul>
-        <form role="search">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        </form>
       </div>
     </div>
   </nav>
-  <div class="pagelayout">
+  <!-- <div class="pagelayout">
     <div class="expcontainer">
-      </form>
     </div>
-  </div>
-  </nav>
-  <div class="pagelayout">
+  </div> -->
+
+  <!-- <div class="pagelayout">
     <div class="expcontainer">
       <p class="twoDcontext" style="color:#DBD6D1">
         I measured the space I was going to use and scaled it down.Taking the measurements of items I am using, like the
@@ -149,7 +172,31 @@
           </a>
         </figure>
       </div>
-    </div>
+    </div> -->
+  <div class="dimensional-mockups">
+    <figure class="two-dimensional-mockup">
+      <figcaption class="description">
+        I measured the space I was going to use and scaled it down.Taking the measurements of items I am using, like the
+        bucket and storage. Creating this 2D design allowed me make sure how I will be using the space and optimize my
+        space for maximum efficiently.
+      </figcaption>
+      <!-- <a> -->
+      <!-- only if you want to link this to something -->
+      <img src="2D.png">
+      <!-- </a> -->
+    </figure>
+
+    <figure class="three-dimensional-mockup">
+      <figcaption class="description">
+        I created a 3D visualization of the final farm design to give
+        perspective and a outlook at what a final product could look like.
+      </figcaption>
+      <!-- <a> -->
+      <!-- only if you want to link this to something -->
+      <img src="1design.png">
+      <!-- </a> -->
+    </figure>
+  </div>
   </div>
 
 </body>
